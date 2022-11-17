@@ -1,8 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import Hero from "../components/Hero";
 
 const Menu = () => {
-  return <div className="flex justify-between items-center">Menu</div>;
+  return (
+    <div className="flex justify-between items-center">
+      <Hero />
+    </div>
+  );
 };
 
 export default Menu;

@@ -27,21 +27,19 @@ const Navbar = () => {
     <div style={{ backgroundColor: `${color}` }} className="fixed top-0 left-0 w-full z-10 ease-in duration-300">
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            Maza&apos;s blog
-          </h1>
+          <h1 className="font-bold text-4xl text-white">Maza&apos;s blog</h1>
         </Link>
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4">
+        <ul className="hidden sm:flex">
+          <li className="p-4 text-white hover:text-green-500">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 text-white hover:text-green-500">
             <Link href="/#trending">Trending</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 text-white hover:text-green-500">
             <Link href="/#superhero">Superhero</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 text-white hover:text-green-500">
             <Link href="/#contactus">Contact Me</Link>
           </li>
         </ul>
@@ -49,7 +47,7 @@ const Navbar = () => {
         {/* Mobile Button */}
         <div onClick={handleNav} className="block sm:hidden z-10 cursor-pointer">
           {/* tailwind: apabila min-width > 640 ? muncul : hidden */}
-          {nav ? <AiOutlineClose size={20} style={{ color: `${textColor}` }} /> : <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />}
+          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />}
         </div>
         {/* Mobile Menu */}
         <div
