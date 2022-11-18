@@ -34,20 +34,17 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="p-4 text-white hover:text-green-500">
-            <Link href="/#trending">Trending</Link>
+            <Link href="/Contact">Contact Me</Link>
           </li>
           <li className="p-4 text-white hover:text-green-500">
-            <Link href="/#superhero">Superhero</Link>
-          </li>
-          <li className="p-4 text-white hover:text-green-500">
-            <Link href="/#contactus">Contact Me</Link>
+            <Link href="/About">About</Link>
           </li>
         </ul>
 
         {/* Mobile Button */}
         <div onClick={handleNav} className="block sm:hidden z-10 cursor-pointer">
           {/* tailwind: apabila min-width > 640 ? muncul : hidden */}
-          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />}
+          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} className="text-white bg-white" />}
         </div>
         {/* Mobile Menu */}
         <div
@@ -62,10 +59,7 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl hover:text-blue-500">
-              <Link href="/trending">Trending</Link>
-            </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-blue-500">
-              <Link href="/portofolio">Portofolio</Link>
+              <Link href="/Contact">Contact Me</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl hover:text-blue-500">
               <Link href="/About">About</Link>
