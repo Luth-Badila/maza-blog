@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 lg:p-8 mt-[100px] mb-[10px]">
+    <div className="bg-white shadow-lg max-w-[1000px] rounded-lg p-4 lg:p-8 sm:mt-[100px] mt-[80px] mb-[10px]">
       <div className="relative overflow-hidden shadow-md pb-80 mb-6">
         <Image src="" alt="" height={100} width={100} className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg" />
       </div>
@@ -13,7 +13,7 @@ const Hero = () => {
       </h1>
       <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
         <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
-          <Image alt="" height="30px" width="30px" className="align-middle rounded-full" src="" />
+          <Image alt="" height={30} width={30} className="align-middle rounded-full" src="" />
           <p className="inline align-middle text-gray-700 ml-2 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, explicabo.</p>
         </div>
         <div className="font-medium text-gray-700">
@@ -26,7 +26,7 @@ const Hero = () => {
       <p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8">Lorem ipsum dolor sit amet.</p>
       <div className="text-center">
         <Link href="">
-          <span className="transition duration-500 transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Lanjutkan membaca</span>
+          <span className="transition duration-500 transform hover:-translate-y-1 inline-block bg-blue-800 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Lanjutkan membaca</span>
         </Link>
       </div>
     </div>
