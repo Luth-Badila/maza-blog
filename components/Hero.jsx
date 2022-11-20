@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="bg-white shadow-lg max-w-[1000px] rounded-lg p-4 lg:p-8 sm:mt-[100px] mt-[80px] mb-[10px]">
+    <div className="bg-white shadow-lg max-w-[1000px] rounded-lg p-4 lg:p-8 sm:mt-[120px] mt-[100px] mb-[10px] mx-10">
       <div className="relative overflow-hidden shadow-md pb-80 mb-6 pt-3">
         <Image src="" alt="" height={100} width={100} className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg" />
       </div>

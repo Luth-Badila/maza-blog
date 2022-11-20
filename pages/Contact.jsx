@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="mt-[100px] flex justify-center items-center h-[80vh]">
+    <div className="mt-[100px] flex justify-center items-center h-[80vh] lg:mx-0 mx-5">
       <form className="bg-[#003566] p-[20px] my-0 mx-auto w-[800px] rounded-md flex flex-col gap-3 text-white">
         <label htmlFor="title">Title:</label>
         <input type="text" id="title" className="block w-[100%] border-solid border-grey p-[6px]" />
