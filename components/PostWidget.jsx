@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const PostWidget = ({ images }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8 lg:mt-[120px] mt-0 lg:mx-[50px] mx-[20px] my-[60px] lg:my-[120px]">
+    <div className=" bg-white shadow-lg rounded-lg p-8 lg:mt-[120px] mt-0 lg:mx-[50px] mx-[20px] my-[60px] lg:my-[120px]">
       <h3 className="lg:text-xl text-m mb-8 font-semibold border-b pb-4">Other topic</h3>
       {/* Realted Post */}
       {images.map((image) => (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 import supabase from "../config/supabaseClient";
@@ -20,12 +20,12 @@ const Create = () => {
       return;
     }
 
-    const { data, error } = await supabase.from("images").insert([{ name, username, imageSrc }]);
+    const { data } = await supabase.from("images").insert([{ name, username, imageSrc }]);
 
-    if (error) {
-      setFormError("Please fill in all the field correctly");
-    }
-    if (data) {
+    if (!data == !name || !username || !imageSrc) {
+      setFormError("Isien lur");
+      return;
+    } else {
       setFormError(null);
       router.push("/");
     }
@@ -43,7 +43,7 @@ const Create = () => {
         <label htmlFor="imageSrc">Image Source:</label>
         <input type="text" id="imageSrc" value={imageSrc} onChange={(e) => setImageSrc(e.target.value)} className="block w-[100%] border-solid border-grey p-[6px]" />
 
-        <button className="bg-black ml-[275px] text-white border-0 py-[6px] px-[4px] rounded-lg cursor-pointer w-[130px]">Create Newpost</button>
+        <button className="bg-black ml-[260px] text-white border-0 py-[6px] px-[4px] rounded-lg cursor-pointer w-[130px]">Create Newpost</button>
 
         {formError && <p className="text-black">{formError}</p>}
       </form>
