@@ -1,7 +1,8 @@
 import React from "react";
-import Image from 'next/legacy/image'
+import Image from "next/legacy/image";
 
-const About = () => {
+const About = ({ images }) => {
+  console.log(images);
   return (
     <div className="mt-[100px] flex justify-center items-center md:h-[68vh] lg:h-[80vh] lg:mx-0 mx-5">
       <div className="bg-white shadow-lg max-w-[1000px] rounded-lg p-2 lg:p-4 sm:mt-[40px] mt-[20px] mb-[4rem] lg:mx-auto mx-[30px]">

@@ -2,7 +2,6 @@ import Head from "next/head";
 import PostWidget from "../components/PostWidget";
 import Hero2 from "./Hero2";
 import { createClient } from "@supabase/supabase-js";
-import Slug from "./[slug]";
 
 export default function Home({ images }) {
   return (
@@ -21,9 +20,6 @@ export default function Home({ images }) {
             <PostWidget images={images} />
           </div>
         </div>
-      </div>
-      <div className="hidden">
-        <Slug images={images} />
       </div>
     </div>
   );
