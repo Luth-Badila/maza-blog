@@ -5,7 +5,7 @@ import Image from "next/legacy/image";
 const Hero2 = ({ images }) => {
   return (
     <div className="px-5 my-[80px] lg:my-[120px] md:my-[110px] sm:grid md:grid-cols-2 3xl:flex flex-wrap justify-center gap-5">
-      {images.map((image) => (
+      {images?.map((image) => (
         <div key={image.id} className="bg-white p-2 group cursor-pointer transition duration-200 ease-in transform lg:hover:scale-105 rounded-lg lg:mb-0 mb-5">
           <Link href={`/PostDetails/${image.id}`}>
             <Image src={image.imageSrc} alt="Film Image" layout="responsive" height={1080} width={1920} />
